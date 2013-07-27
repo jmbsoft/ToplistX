@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>ToplistX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div align="center">
+<span class="large">Patching Your ToplistX Installation</span>
+</div>
+
+<br />
+
+<div class="centered">
+<div class="main-content">
+
+<div style="position: relative; float: right;"><a href="index.html">Table of Contents</a></div>
+
+<b class="heading">Introduction</b>
+
+<br />
+<br />
+
+ToplistX will be updated when necessary to fix any bugs and add small features.  These releases can be recognized by a change
+in the third digit of the software version number or for an updated snapshot release.  For example a change from version 1.0.1 to 1.0.2 is a patch release.
+When these patches are released you should upgrade your installation to the new version.  This document contains instructions for doing just that.
+
+<br />
+<br />
+
+<b class="heading">Patching</b>
+
+<br />
+<br />
+
+Patching your installation is very simple.  All you need to do is upload the new files from the new version to your server.  All of the files that
+need to be uploaded are listed below. You should not run any upgrade scripts when patching your installation, those are only used when upgrading
+from a previous major release.
+
+<br />
+
+<ul>
+base directory - all .php files<br />
+admin directory - all files <b>except install.php</b><br />
+admin/docs directory - all files<br />
+admin/images directory - all files<br />
+admin/includes directory - all files<br />
+includes directory - all files <b>except config.php and access-list.php</b>
+</ul>
+
+<div class="note">
+The common.php, in.php, and out.php scripts must be uploaded to your server in
+binary mode and <b>not ASCII mode</b>.  All of the other .php files can be uploaded in either binary or ASCII mode.
+</div>
+
+<br />
+
+Once those files have been transferred, point your browser to the patch.php script in the admin directory of your ToplistX installation.  Accessing this
+script through your browser will perform any updates necessary.  Once you access the patch.php script and get a message indicating that the software
+has been patched successfully, login to the control panel and run the Recompile Page Templates function.
+
+<br />
+<br />
+
+The upgrade process is now complete and you can continue using the software as you regularly would.
+
+<br />
+<br />
+
+<b class="heading">Important Notes</b>
+
+<br />
+<br />
+
+It is not necessary to delete any files from your server before you upload the updated scripts. If you do delete any files, make sure you
+reset all permissions on the files you upload.  All file permissions are covered in the <a href="installation.html">Installation</a>
+section of the manual.
+
+</div>
+</div>
+
+<br />
+<br />
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+1.0.0 SNAPSHOT
+==============
+- Fixed incoming stats tracking algorithm issue that caused cookied users to be tracked incorrectly (May 25, 2008)
+- Fixed bug in the hourly stats update routine that could generate a MySQL error message (May 27, 2008)
+- Fixed issue in the General Settings interface that caused the Return Percent value to be multiplied by 100 (May 27, 2008)
+- Improved the software's ability to locate the CLI version of PHP on the server (May 30, 2008)
+- Fixed issue with blank ranking page when using certain sorting options and having minhits > 0 (June 14, 2008)
+- Fixed issue with the in.php script that would prevent page rendering when used in a PHP virtual() call (June 30, 2008)
+- Fixed control panel JavaScript errors in IE7 (June 30, 2008)
+- Updated Statistical Tracking Overview documentation with more universal code for .php pages when using embedded tracking (June 30, 2008)
+- Removed warning message when saving ranking page templates that use the {$icon} template variable (June 30, 2008)
+- Updated Ranking Page Templates documentation with additional available options for the order setting of the {accounts} template function (June 30, 2008)
+- Added new stats attribute to the {accounts} template function to allow pulling of more detailed statistical information for each account (June 30, 2008)
+- Updated default template to display both incoming and outgoing stats for each account (June 30, 2008)
+- Fixed issue with account editing interface reporting an invalid banner file type (July 29, 2008)
+- Fixed issue with SQL having clause not being properly generated for some {accounts} template functions (July 30, 2008)
+- Fixed issue with banner data not being properly updated when serving banners (July 30, 2008)
+- Updated display of edited account data to not include the banner data or local banner URL (August 4, 2008)
+- Updated documentation to replace incorrect {$category.page_url} value with {$category.filename} (August 4, 2008)
+- Fixed issue with duplicate ratings generating MySQL error message (August 20, 2008)
+- Updated the skimming system to better determine when a click should be sent to a trade or to the URL provided (January 13, 2009)
+- Added setting for the HTTP status code used when redirecting surfers through the out.php script (January 20, 2009)
+- Fixed issue with the inactive count not being properly maintained (January 20, 2009)
+- Fixed issue that allowed a surfer to only rate one account (February 14, 2009)
+- Updated patch.php script to automatically handle database inconsistency possible with previous snapshot release (March 2, 2008)
+- Fixed issue with comment flood protection (via the Comment Interval setting) not working properly (March 20, 2009)
+- Fixed issue with filler ranks not being displayed correctly when the number of accounts is one less than the number to display (April 12, 2009)
+- Fixed error in the default accounts-edit.tpl template that prevented display of the banner size limits (April 17, 2009)
+- Fixed issue that allowed incorrectly sized banners to be submitted (May 12, 2009)
+- Removed requirement of Zend Optimizer (March 22, 2010)
+- Removed requirement of OpenSSL extension (March 22, 2010)
+- Software now provided completely as source with no encoded files (March 22, 2010)
+- Improved support for PHP 5.3 (April 15, 2010)
+- Fixed issue that could prevent user defined account fields from being updated by end-users (November 21, 2010)
+
+	Modified Files
+	--------------
+	For reference only; may be incomplete! Use software manual patching instructions to update your installation
+
+
+
+1.0.0 - May 15, 2008
+====================
+- Fixed issue with MySQL error message when running arphp-convert.php (May 10, 2008)
+- Fixed issue with MySQL error message when running arp-convert.php (May 10, 2008)
+
+
+
+1.0.0 BETA
+==========
+- Fixed issue with max banner size not appearing correctly on the account creation form (April 24, 2008)
+- Fixed issue with double / being added to bulk added pages (April 24, 2008)
+
+
+
+1.0.0 BETA PREVIEW - March 26, 2008
+===================================
+- Added arp-convert.php utility script to import data from AutoRank Pro 5.0.x (March 25, 2008)
+- Added arphp-convert.php utility script to import data from AutoRank PHP 3.0.x (March 25, 2008)
+- Added the {featured} ranking page template function to display a featured site (March 26, 2008)
+- Added the storecatranks attribute for the {accounts} ranking page template function (March 26, 2008)
+- Added fields to store each account's rank from the last build in the database (March 26, 2008)
+- Fixed issue with search generating an error message when no categories were defined (March 26, 2008)
+- Added display of referring URL stats in the control panel account stats interface (March 26, 2008)
+
+
+
+1.0.0 BETA PREVIEW - March 18, 2008
+===================================
+- End user search function completed (March 12, 2008)
+- Default template set updated for a consistent look between all pages (March 12, 2008)
+- Added URL encoding function (March 12, 2008)
+- Added ability to automatically remove uncofirmed accounts through cron (March 13, 2008)
+- Added the image.php script to display ranking images on member sites (March 13, 2008)
+- Added storeranks attribute for the {accounts} ranking page template function (March 13, 2008)
+- Added the secret key value for direct link (embedded) tracking mode (March 17, 2008)
+- Added ability to send surfer to a random site with the out.php script (March 17, 2008)
+- Added ability for end users to view the surfer comments submitted for a site (March 17, 2008)
+- Added ability for end users to rate and submit comments for sites (March 18, 2008)
+- Added quick tasks interface for Search Accounts (March 18, 2008)
+
+
+
+1.0.0 BETA PREVIEW - March 11, 2008
+===================================
+- Majority of the software documentation is now complete
+
+
+
+1.0.0 BETA PREVIEW - March 4, 2008
+==================================
+- Initial public release of ToplistX

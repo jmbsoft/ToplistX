@@ -1,0 +1,138 @@
+html {
+  height: 100%;
+}
+
+body {
+  color: #4d4d4d;
+  background: #DCDCB7;
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 9pt Verdana;
+  height: 100%;
+  min-height: 100%;
+}
+
+form { 
+  margin: 0;
+  padding: 0;
+}
+
+input, select, textarea, td {
+  font: 9pt Verdana;    
+}
+
+a:link, a:visited {
+  font-weight: bold;
+  color: #5d5d5e;
+}
+
+a:hover, a:active {
+  color: #99977e;
+}
+
+#background {
+  background: transparent url(../images/background.png) repeat-y top left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  min-height: 100%;
+  background-color: #efefe6;
+}
+
+#content {
+  padding: 40px;
+  padding-top: 10px;
+}
+
+.table-border {
+  background: #d9d9c2;
+  color: #555A5F;
+}
+
+.table-header {
+  background: #ffeb7a url(../images/header-bg.png) repeat-x top left; 
+  color: #8e4c08; 
+  height: 33px; 
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-header td {
+  font-weight: bold;
+}
+
+
+.table-header-l {
+  background: #ffeb7a url(../images/header-bg-l.png) no-repeat top left; 
+  width: 2px;
+}
+
+.table-header-r {
+  background: #ffeb7a url(../images/header-bg-r.png) no-repeat top right; 
+  width: 2px;
+}
+
+table.rows td {
+  background: #eeeee0;
+  color: #626262;
+  border-left: 1px solid #f5f5e7;
+  border-top: 1px solid #f5f5e7;
+}
+
+.row-color-a {
+  background: #eeeee0;
+  color: #626262;
+  border-left: 1px solid #f5f5e7;
+  border-top: 1px solid #f5f5e7;
+}
+  
+.row-color-b {
+  background: #eaeadb;
+  color: #4d4d4d;
+  border-left: 1px solid #f5f5e7;
+  border-top: 1px solid #f5f5e7;
+}
+
+.small {
+  font-size: 8pt;
+}
+
+.error {
+  font-weight: bold;
+  color: #d52727;
+  border: 1px dotted #d52727;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #FEE7E8;
+}
+
+.notice {
+  font-weight: bold;
+  color: #0097FF;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #EFF8E0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hilite {
+  background-color: yellow;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.line-bottom {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.banner {
+  padding-top: 2px;
+  padding-bottom: 3px;
+}

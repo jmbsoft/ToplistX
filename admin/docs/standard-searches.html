@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>ToplistX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div align="center">
+<span class="large">Standard Searches</span>
+</div>
+
+<br />
+
+<div class="centered">
+<div class="main-content">
+
+<div style="position: relative; float: right;"><a href="index.html">Table of Contents</a></div>
+
+<b class="heading">Introduction</b>
+
+<br />
+<br />
+
+While some of the database fields support <a href="boolean-searches.html">boolean mode searches</a>, the majority of them use standard searching techniques.  While this is
+slightly less powerful than a boolean mode search, it can still allow you to quickly locate exactly what you are looking for.  This document will describe how standard
+searches work in the ToplistX control panel.
+
+<br />
+<br />
+
+<b class="heading">Standard Search Overview</b>
+
+<br />
+<br />
+
+Standard searches will look for the value that you enter in the text box, and do not support operators like +, 0, or &quot; characters for phrases.  Those operators
+would be considered part of the search phrase, so they should only be used if you are looking for that literal value in the field you are searching.  In the control
+panel you will find two different search types, depending on the function.  <a href="#advanced">Advanced Searches</a> allow you to specify the search type (matches, contains, etc)
+whereas <a href="#simple">Simple Searches</a> do not.  You can identify simple searches by the fact that they will not have a drop down selection field where you can
+choose the search type.
+
+<br />
+<br />
+
+<b class="heading">Simple Searches<a name="simple"></a></b>
+
+<br />
+<br />
+
+Simple searches will look for the term you entered anywhere in the field you have selected.  So, for example, if you search for the word "stop" that would match not only "stop" but
+also "stopped", "stopping", etc.
+
+<br />
+<br />
+
+<b class="heading">Advanced Searches<a name="advanced"></a></b>
+
+<br />
+<br />
+
+Advanced searches allow you to specify the type of search that should be done.  A drop down selection field will appear containing the following options:
+
+<ul>
+<table cellspacing="1" cellpadding="4" class="fields">
+<tr>
+<td valign="top" align="right">
+<b>Matches</b>
+</td>
+<td>
+This will look for an exact match with the search term you entered.  The field you select will need to have the exact search term as it's value in order to match.  For example, if you
+enter testaccount for the search term when searching the Username field it would match only the account in the database with username testaccount and not those with usernames testaccount123, mytestaccount, 2ndtestaccount, etc.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Contains</b>
+</td>
+<td>
+This will look for the search term anywhere in the field you have selected.   For example, if you enter testaccount for the search term when searching the Username field it would match not only
+the account in the database with username testaccount and not those with usernames testaccount123, mytestaccount, 2ndtestaccount, etc.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Starts With</b>
+</td>
+<td>
+This will look for the search term at the beginning of the field you have selected.  For example, if you enter test for the search term when searching the Username field it would match not only
+the account in the database with username test, but also those with usernames testaccount123, testaccountforme, testeraccount, etc.  It would not match those with usernames mytestaccount, 2ndtestaccount, etc.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Less Than</b>
+</td>
+<td>
+This will look for values that are less than the search term.  For example, if you enter 468 for the search term when searching the Banner Width field it would match all of the accounts in the database
+with a banner height of 468 or smaller (468,467,465,etc).
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Greater Than</b>
+</td>
+<td>
+This will look for values that are greater than the search term.  For example, if you enter 468 for the search term when searching the Banner Width field it would match all of the accounts in the database
+with a banner height of 468 or larger (468,469,470,etc).
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Between</b>
+</td>
+<td>
+This will look for values that are between the two search values that you entered.  This type of search requires that you enter a comma separated list, with the small value first and the large
+value second.  For example, if you enter 400,500 for the search term when searching the Banner Height field it would match all of the accounts in the database with a banner height of 400 through 500 (400,401,402,...,498,499,500).
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Empty</b>
+</td>
+<td>
+This will look for empty fields in the database.  You do not need to enter a search term when using this search type.  It will return all of the items that have an empty value (empty string or NULL) for
+the field you have selected.
+</td>
+</tr>
+</table>
+</ul>
+
+
+
+</div>
+</div>
+
+<div style="height: 1200px">
+</div>
+
+</body>
+</html>

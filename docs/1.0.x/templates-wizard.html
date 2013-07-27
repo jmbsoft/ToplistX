@@ -1,0 +1,148 @@
+<html>
+<head>
+    <title>ToplistX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div align="center">
+<span class="large">Template Wizard</span>
+</div>
+
+<br />
+
+<div class="centered">
+<div class="main-content">
+
+<div style="position: relative; float: right;"><a href="index.html">Table of Contents</a></div>
+
+<b class="heading">Introduction</b>
+
+<br />
+<br />
+
+The template wizard will assist you in creating the necessary {accounts} functions to pull member accounts from the database and will also generate the {foreach} function to
+display each of the accounts on your page.  This document will cover how to use the template wizard.
+
+<br />
+<br />
+
+<b class="heading">Accessing the Template Wizard</b>
+
+<br />
+<br />
+
+To access the template wizard use the Ranking Pages &gt; Edit Templates function.  This will load the page where you edit your ranking page templates.  In the header bar of this page that
+reads Ranking Page Templates you can click on the <img src="../images/wizard.png" border="0"> icon to access the template wizard.
+
+<br />
+<br />
+
+<b class="heading">Basic Overview</b>
+
+<br />
+<br />
+
+The template wizard is something that will help you to generate the {accounts} and {foreach} commands that you will need to use to pull accounts from the database and
+display them on your page(s).  
+
+<br />
+<br />
+
+For HTML templates, the wizard will not generate a complete template for you with all of the HTML code that you need for a full page.  It is designed to give you
+the code you need for a specific section of accounts.  For example, if you want to quickly generate the template code necessary to display accounts ranked 1-20 on the
+page, you can use the template wizard.  The code that the wizard creates will need to be inserted into your ranking page template code at the location where you want the
+accounts to appear.
+
+<br />
+<br />
+
+For RSS feed templates, the wizard will generate the complete template for you.  You will simply need to copy the entire generated template code and save it for the 
+RSS feed template.  Make sure your RSS feed templates have a .xml, .rdf, or .rss file extension!
+
+<br />
+<br />
+
+<div class="note">
+Remember, you are not limited to a single section of accounts per page; you can have as many sections as you want.  Therefore, you can use the wizard multiple times to
+create all of the template code you will need for your page to pull accounts for each of the sections of accounts that you want to display on the page.
+</div>
+
+<br />
+
+<b class="heading">General Options</b>
+
+<br />
+<br />
+
+The General Options section of the template wizard will allow you to conifgure some basic settings for the template functions you will be generating.  Each of the settings
+you can configure are described below.
+
+<ul>
+<table cellspacing="1" cellpadding="4" class="fields">
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Ranks to Display</b>
+</td>
+<td>
+Enter the ranks you want to display in this section.  The first box should contain a number smaller than the second box.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Display As</b>
+</td>
+<td>
+Select how you would like the accounts displayed<br />
+<b>Traditional text link and banner</b> - This will generate template code that displays the member accounts in a traditional link/banner layout<br />
+<b>Friends style page</b> - This will generate template code that displays the member accounts in the friends style, which shows a table containing several rows and columns of accounts<br />
+<b>RSS Feed</b> - This will generate template code for a plain text RSS feed<br />
+<b>RSS Feed With Banners</b> - This will generate template code for an RSS feed that displays both text and images for each account<br />
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Categories</b>
+</td>
+<td>
+Select the categories that you want displayed in this section.  The ANY CATEGORY option will allow accounts from all categories in this section.  You can select more
+than one category by clicking the <img src="../images/add-small.png" border="0"> icon.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Exclude Categories</b>
+</td>
+<td>
+If you want to display all categories in this section except for a few, set the <i>Categories</i> option to ANY CATEGORY and select the categories that you don't want to 
+show in this section.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Sort Accounts By</b>
+</td>
+<td>
+Select what method you would like to use for sorting accounts in this section.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Minimum Sort Value</b>
+</td>
+<td>
+Enter the minimum value that is allowed for the sort option in order for an account to appear in this section.  For example, if you select "Unique In Last Hour" for the
+Sort Accounts By option and enter 5 in this field, only accounts with 5 or more unique hits in during the last hour will be displayed.
+</td>
+</tr>
+</table>
+</ul>
+
+</div>
+</div>
+
+<div style="height: 1200px">
+</div>
+
+</body>
+</html>

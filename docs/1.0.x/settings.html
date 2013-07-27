@@ -1,0 +1,213 @@
+<html>
+<head>
+    <title>ToplistX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div align="center">
+<span class="large">General Settings</span>
+</div>
+
+<br />
+
+<div class="centered">
+<div class="main-content">
+
+<div style="position: relative; float: right;"><a href="index.html">Table of Contents</a></div>
+
+<b class="heading">Introduction</b>
+
+<br />
+<br />
+
+The General Settings interface allows you to configure the software options as you like.  There are a number of settings that you can adjust, and each of them
+is described in this section of the manual.
+
+<br />
+<br />
+
+<b class="heading">Basic Settings</b>
+
+<ul>
+<b>Document Root</b> - This is the full directory path to the root of your website where ToplistX is installed.  For example, when you access http://www.yoursite.com/index.html
+the index.html file is located in your Document Root folder.  ToplistX will try to automatically set this value for you, so in most cases you do not need
+to change this setting.<br /><br />
+
+<b>ToplistX URL</b> - This is the the base URL where ToplistX is installed on your server<br /><br />
+
+<b>Banner URL</b> - This is the URL that points to the directory on your server where you want member banners stored if you choose the option to download and
+serve them from your server.  This should point to an empty directory with 777 permissions that is located inside the Document Root.<br /><br />
+
+<b>Cookie Domain</b> - The domain name to use when setting cookies.  This must contain the domain name of the website where ToplistX is installed.<br /><br />
+
+<b>Page Permissions</b> - The file permissions to set on the generated ranking pages.
+<br /><br />
+
+<b>E-mail Address</b> - This is the e-mail address will appear in the From field of all e-mails sent by ToplistX<br /><br />
+<b>E-mail Name</b> - This is the name that will appear in the From field of all e-mails sent by ToplistX<br /><br />
+<b>E-mail Sender</b> - Choose the method that ToplistX will use for sending emails.  In most cases you should leave this set to the default PHP mail() Function
+option.
+
+<br />
+<br />
+
+<ul>
+<b>PHP mail() Function</b> - ToplistX will use PHP's built in mail() function for sending e-mail messages.<br />
+<b>Sendmail</b> - ToplistX will use sendmail on your server to send e-mail messages.  This will require that PHP is not running
+in safe mode and the popen() function is not disabled.  You will need to enter the full path to sendmail in the text input box
+after the drop down selection field.<br />
+<b>SMTP Server</b> - ToplistX will use a SMTP server to send e-mail messages.  This will require that the SMTP server has authorized your
+server to send e-mail messages through it.  You will need to enter the hostname of the SMTP server in the input box after the drop
+down selection field.
+</ul>
+
+<br />
+<br />
+
+<b>Date Format</b> - The string that specifies the <a href="date-time-formats.html">format</a> to use for date values<br /><br />
+<b>Time Format</b> - The string that specifies the <a href="date-time-formats.html">format</a> to use for time values<br /><br />
+<b>Your Timezone</b> - Select the timezone you are located in so that dates and times can be calculated properly<br /><br />
+<b>Decimal Point</b> - The value to use for the decimal point in numbers<br /><br />
+<b>Thousands Separator</b> - The value to use for the thousands separator in numbers<br /><br />
+
+<b>Using cron to automate page building, hourly stats, and daily stats</b> - Check this box only if you have setup cron to handle the rebuilding of your pages and
+calculation of the hourly and daily stats.<br /><br />
+
+<b>Rebuild Interval</b> - The <b>minimum</b> amount of time, in seconds, between page rebuilds.  This only has an affect if you are not using cron for rebuilds.
+
+</ul>
+
+<b class="heading">Ranking Images Settings</b>
+
+The ranking images feature of the software allows you to display an image on your member sites that shows the current position of that site in the ranks.  For
+example, if a member site is currently ranked #2 you can have an image display on their site that says they are ranked #2 in your list.  More information can
+be found in the <a href="ranking-images.html">Ranking Images</a> section of the software manual.
+
+<ul>
+<b>Ranking Images URL</b> - The URL where you will place the ranking images to display on your member sites<br /><br />
+<b>Images To Show</b> - The number of ranking images you will create with numbers on them<br /><br />
+<b>File Extension</b> - The file extension of the ranking images you have created.
+</ul>
+
+<b class="heading">Click Tracking &amp; Rating Settings</b>
+
+<ul>
+<b>Tracking Mode</b> - Choose the method that you want the software to use for statistics tracking.  More information on the software stat tracking system
+can be found in the <a href="tracking-overview.html">Statistical Tracking Overview</a> section of the manual.
+
+<br />
+<br />
+
+<ul>
+<b>Accounts send surfers directly to your site</b> - With this method, account holders will be able to send surfers to any URL on your site that you specify,
+as long as you are able to include the in.php click tracking script as part of that page (using SSI, PHP, or an &lt;img&gt; tag).  This is generally a better choice
+for search engine optimization.
+
+<br /><br />
+
+<b>Unique link for each account</b> - With this method, each member account will be given a unique link that they will need to place on their sites
+to track the surfers that they send to your site.  The link will point to the ToplistX in.php script and contain their account username in the URL
+for tracking purposes.
+</ul>
+
+<br />
+
+<b>Secret Key</b> - A unique value used with the <i>Accounts send surfers directly to your site</i> tracking mode.  This can be any string of characters, but may only
+contain English letters, numbers, and the underscore character.    You will need to use this value in your embedded tracking code, as described in the
+<a href="tracking-overview.html">Statistical Tracking Overview</a> section of the manual. DO NOT SHARE THIS VALUE WITH ANYONE!<br /><br />
+
+<b>Tracking URL</b> - The URL that member accounts will use to track their statistics.  If you are using <i>Unique link for each account</i>, this must point to the
+ToplistX in.php script.  If you are using the <i>Accounts send surfers directly to your site</i>, this must point to the page on your site that has the in.php script
+embedded.<br /><br />
+
+<b>Default Forward URL</b> - If you are using <i>Unique link for each account</i>, this is the URL that surfers will be sent to after their click is recorded by the in.php script.<br /><br />
+
+<b>Alternate Out URL</b> - If you are using the skimming feature of the out.php script, this is the URL that surfers will be sent to when none of your accounts are owed clicks but the
+surfer should be sent to one of your accounts based on the skim percentage.<br /><br />
+
+<b>Redirect Status Code</b> - The HTTP status code that the software should use when redirecting surfers to your member sites.  In most cases you will want to use 301 for this value, although
+you could select any of the 30x HTTP status codes.<br /><br />
+
+<b>Maximum Site Rating</b> - The maximum value a surfer can select for a site rating.<br /><br />
+
+<b>Comment Length</b> - The minimum and maximum number of characters allowed in a surfer comment.<br /><br />
+
+<b>Comment Interval</b> - The amount of time, in seconds, that a user must wait before submitting another comment for the same account.<br /><br />
+
+<b>Review new surfer comments before displaying them on your site</b> - Check this box if you want to review surfer comments before they appear on your site
+</ul>
+
+<b class="heading">Account Submission Settings</b>
+
+<ul>
+<b>Account Submissions</b>
+
+<br />
+<br />
+
+<ul>
+<b>Open</b> - You are currently accepting new accounts<br />
+<b>Closed</b> - You are not currently accepting new accounts; this will disable the account submission form
+</ul>
+
+<br />
+<br />
+
+<b>Review new accounts before listing them</b> - Check this if you want to review all newly submitted accounts before they are listed on your site<br /><br />
+<b>Review account editing before listing the changes</b> - Check this if you want to review all changes made to accounts by the account holders<br /><br />
+<b>New accounts must be confirmed through the submitter's e-mail address</b> - Check this if you want all new account holders to confirm their account submission by e-mail<br /><br />
+<b>Send confirmation e-mail message to new accounts when created</b> - Check this if you want an e-mail message sent to new account signups when their account is added<br /><br />
+
+<b>Site Title Length</b> - The minimum and maximum number of characters allowed in an account site title<br /><br />
+<b>Description Length</b> - The minimum and maximum number of characters allowed in an account description<br /><br />
+
+<b>Allow user to submit keywords with their site information</b> - Check this if you want to allow keywords to be included with account signups<br /><br />
+<b>Keywords Allowed</b> - The maximum number of keywords that can be submitted with an account<br /><br />
+<b>Default Return Percent</b> - The default return percentage assigned to newly submitted accounts<br /><br />
+<b>Maximum Banner Width</b> - The maximum banner width, in pixels, allowed for submitted banners<br /><br />
+<b>Maximum Banner Height</b> - The maximum banner height, in pixels, allowed for submitted banners<br /><br />
+<b>Maximum Banner Filesize</b> - The maximum banner filesize, in bytes, allowed for submitted banners<br /><br />
+
+<b>Force all banners to the height and width entered above</b> - Check this if you want to assign the same width and height to all banners, no matter what their actual size is<br /><br />
+<b>Download banners to check height, width, and filesize</b> - Check this to have the software download and check the actual size of the banner<br /><br />
+<b>Host member account banners from your server</b> - Check this if you want to serve all account banners from your server<br /><br />
+<b>Allow redirecting site URLs to be submitted (300 level HTTP status codes)</b> - Check this if you want to allow accounts submitted that redirect surfers
+</ul>
+
+
+<b class="heading">Verification Code Settings</b>
+
+<br />
+<br />
+
+Please also review the <a href="verification-codes.html">Verification Codes</a> section of this manual
+
+<ul>
+<b>Font Directory</b> - The full directory path to the location of the ToplistX fonts directory.<br /><br />
+<b>Code Length</b> - The minimum and maximum number of characters that will appear in a verification code.<br /><br />
+<b>Use words file for verification codes</b> - Check this box to use the values stored in the words file for the verification codes.<br /><br />
+<b>Require verification code on account creation interface</b> - Check this box to require a verification code during account submission.<br /><br />
+<b>Require verification code on account rating interface</b> - Check this box to require a verification code for surfers rating your member sites.<br /><br />
+<b>Require verification code on account comment submission interface</b> - Check this box to require a verification code for surfers leaving comments on your member sites.
+</ul>
+
+
+
+<b class="heading">Confirmation Message Settings</b>
+
+<ul>
+Uncheck any of these boxes if you do not want a confirmation message to appear in the control panel interface when you execute the associated function.
+</ul>
+
+</div>
+</div>
+
+<br />
+<br />
+
+<div style="height: 1200px">
+</div>
+
+</body>
+</html>

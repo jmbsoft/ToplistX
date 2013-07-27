@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>ToplistX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div align="center">
+<span class="large">Database Tools</span>
+</div>
+
+<br />
+
+<div class="centered">
+<div class="main-content">
+
+<div style="position: relative; float: right;"><a href="index.html">Table of Contents</a></div>
+
+<b class="heading">Introduction</b>
+
+<br />
+<br />
+
+The database tools interface allows you to use functions to manage the MySQL database that the ToplistX data is being stored in.  The functions available in the Database Tools interface
+are described in this document.
+
+<br />
+<br />
+
+<b class="heading">Database Backup and Restore</b>
+
+<br />
+<br />
+
+The database backup and restore functions provide you with an internal method to create a backup of the MySQL database tables that ToplistX uses to store it's data.  On some servers, depending on the
+server configuration and size of your database, this internal function may not work and you may need to use an <a href="#alternates">alternate method</a>.  The method that you use is really not that
+important, as long as the data is in a format that MySQL can read.
+
+<br />
+<br />
+
+<b class="heading">Database Backup<a name="backup"></a></b>
+
+<br />
+<br />
+
+To use the database backup feature access the Database &gt; Tools function from the control panel menu.  This will load a page with a section header bar labeled 'Database Backup and Restore'.  There
+will be an information bar below the header bar to let you know what method the software will use for the database backup function.  Each of those is described below.
+
+<ul>
+<table cellspacing="1" cellpadding="4" class="fields">
+<tr>
+<td valign="top" align="right" nowrap>
+<b>mysqldump command line program</b>
+</td>
+<td>
+This is the best backup option and means that the mysqldump command line program has been found on your server.  The mysqldump program is
+highly optimized for making backups of MySQL databases, and therefore will run the fastest and use the least amount of server resources.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap>
+<b>Built-in ToplistX function</b>
+</td>
+<td>
+This option is the second best and means that your server can run a background process to do the database backup.  This prevents some types
+of server timeouts or PHP script time limits from interrupting the backup process prematurely, but it will take longer than mysqldump to complete
+especially on larger databases.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap>
+<b>Through web browser</b>
+</td>
+<td>
+This method will work with smaller databases, but will most likely fail with larger databases.  The backup process must run through your browser which
+means that it can be prematurely terminated by PHP script execution time limits or server timeout settings.  If you try using this method and it fails, check
+the <a href="#alternates">alternate methods</a> that you can use.
+</td>
+</tr>
+</table>
+</ul>
+
+To do the actual database backup simply enter a filename in the text input box and press the Backup button.  The file with the backup data will be created
+with the filename you specified in the data directory of your ToplistX installation.  After you run the backup function, check the data directory to make sure
+the backup file has been created.  You can also monitor the size of that file to determine when the backup process is complete.  When the file size stops increasing,
+you can download that file to your local computer for safe keeping.
+
+<br />
+<br />
+
+<b class="heading">Database Restore</b>
+
+<br />
+<br />
+
+To use the database restore feature access the Database &gt; Tools function from the control panel menu.  This will load a page with a section header bar labeled 'Database Backup and Restore'.  There
+will be an information bar below the header bar to let you know what method the software will use for the database restore function.  These are basically the same as the backup methods, so you can
+refer to that information above.
+
+<br />
+<br />
+
+To do the actual database restore, you will first need to make sure the backup file has been uploaded to the data directory of your ToplistX installation.  Once it is uploaded
+simply enter it's filename in the text input box and press the Restore button.  The data in that file will be read into the MySQL database.  You should allow a few minutes for
+this process to complete (more time will be needed for larger databases) before you begin accessing the other software functions.
+
+<br />
+<br />
+
+<b class="heading">Database Repair/Optimize<a name="backup"></a></b>
+
+<br />
+<br />
+
+This unction allows you to "cleanup" the MySQL database tables that it uses so they are optimized for both
+speed and disk usage.  In general, you will not need to run this command more than once every few weeks, as MySQL is quite efficient in
+maintaining it's datafiles.  The only time you may need to run it more often is if you delete a large number of accounts or comments from your database.
+
+<br />
+<br />
+
+In some cases, usually after your server recovers from a serious error, your MySQL database may become corrupted.  When this happens you will
+get error messages from ToplistX indicating that there is a problem with one or more of your database tables.  In most circumstances MySQL
+is able to repair damaged tables with it's built in functions.  ToplistX allows you to run these built in functions through the Database Tools
+interface.  If you ever get these types of error messages, simply login to the control panel and use the Optimize/Repair function.
+
+<br />
+<br />
+
+To use the database repair/optimize feature access the Database &gt; Tools function from the control panel menu.  This will load a page with a section header bar labeled 'Database Backup and Restore'.  In the
+header bar, click on the <img src="../images/repair.png"> icon to start the repair/optimize process.
+
+<br />
+<br />
+
+<b class="heading">Raw Database Query<a name="raw"></a></b>
+
+<br />
+<br />
+
+This function allows you to run a raw SQL query against the MySQL database that is storing the ToplistX data.  This feature is intended for advanced users who have experience working
+with SQL queries and understand the impact they will have on the database.  In most cases you will not need to use this feature, unless you have been specifically instructed to
+do so for tech support purposes.
+
+</div>
+</div>
+
+<div style="height: 1200px">
+</div>
+
+</body>
+</html>

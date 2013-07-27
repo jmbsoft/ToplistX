@@ -1,0 +1,310 @@
+<html>
+<head>
+    <title>ToplistX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div align="center">
+<span class="large">Categories</span>
+</div>
+
+<br />
+
+<div class="centered">
+<div class="main-content">
+
+<div style="position: relative; float: right;"><a href="index.html">Table of Contents</a></div>
+
+<b class="heading">Introduction</b>
+
+<br />
+<br />
+
+Categories will allow you to split sites up into their own niche sections, and rank the sites against other sites of the same niche.  It is not required that you
+setup categories for ToplistX, but it will give you the ability to have more ranking lists created.  This document describes how to manage your categories.
+
+<br />
+<br />
+
+<b class="heading">Viewing/Searching Categories<a name="search"></a></b>
+
+<br />
+<br />
+
+To view or search your currently configured categories, access the Settings &gt; Manage Categories function from the control panel menu.  This will display a page where you will be able to
+see the currently configured categories and search them if you wish.
+
+<br />
+<br />
+
+In the table that displays the categories, you will find a couple of functions that you can run on a single category.  Each of those functions are described below.
+
+<ul>
+<table cellspacing="1" cellpadding="4" class="fields">
+<tr>
+<td valign="top" align="right">
+<img src="../images/go.png" border="0" alt="">
+</td>
+<td>
+Click this icon to view the accounts in this category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<img src="../images/edit.png" border="0" alt="">
+</td>
+<td>
+Click this icon to edit the category.  A window will appear where you will be able to edit all of it's settings.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<img src="../images/trash.png" border="0" alt="">
+</td>
+<td>
+Click this icon to delete this category.
+</td>
+</tr>
+</table>
+</ul>
+
+In addition to running these functions on single categories, you can also run the delete function on multiple categories at once.  To run the delete function, put a check in the checkbox next to the
+categories you want to delete, then press the Delete button at the bottom of the page.
+
+<br />
+<br />
+
+The search results will display a few different pieces of information about the category.  Each column of the search results is described below.
+
+<ul>
+<table cellspacing="1" cellpadding="4" class="fields">
+<tr>
+<td valign="top" align="right">
+<b>Name</b>
+</td>
+<td>
+The name of the category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Hidden</b>
+</td>
+<td>
+<img src="../images/check.png" width="12" height="12" border="0" alt=""> This category is hidden and cannot be selected by account submitters<br />
+<img src="../images/x.png" width="12" height="12" border="0" alt=""> This category is not hidden and can be selected by account submitters<br />
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Accounts</b>
+</td>
+<td>
+The number of accounts in this category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Sorter</b>
+</td>
+<td>
+The value corresponding to the "Sort:" field that you selected for the current search
+</td>
+</tr>
+</table>
+</ul>
+
+
+<a name="add"></a>
+<b class="heading">Adding a Category</b>
+
+<br />
+<br />
+
+To add a new category access the Settings &gt; Manage Categories function from the control panel menu.  This will display your currently configured categories.  Near the top of the page in the header
+bar that reads "Manage Categories" click on the <img src="../images/add.png" border="0" alt=""> icon.  This will display a popup window where you will be able to enter the data
+for the new category that you want to add.  Each of the form fields are described below.
+
+<ul>
+<table cellspacing="1" cellpadding="4" class="fields">
+<tr>
+<td colspan="2" style="background-color: #ececec; font-weight: bold; font-size: 9pt;">
+General Settings
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<b>Category Name(s)</b>
+</td>
+<td>
+The name(s) you want to use for the category(ies).  You can enter one category per line to add multiple categories at once.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Forward URL</b>
+</td>
+<td>
+If you are using the "Unique link for each account" tracking mode, this is the URL surfers will be sent to when they come from a site in this category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Page URL</b>
+</td>
+<td>
+This value will be assigned to the {$account.category_url} for all accounts in this category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+
+</td>
+<td>
+<b>Make this category hidden</b><br />
+If this is checked this category will not appear on the end-user account submission form
+and users will not be able to submit accounts to this category
+</td>
+</tr>
+<tr>
+<td colspan="2" style="background-color: #ececec; font-weight: bold; font-size: 9pt;">
+Account Settings
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Site Title Length</b>
+</td>
+<td>
+The number of characters allowed in the site titles of accounts in this category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Description Length</b>
+</td>
+<td>
+The number of characters allowed in the site titles of accounts in this category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+
+</td>
+<td>
+<b>Allow redirecting site URLs to be submitted (300 level HTTP status codes)</b><br />
+Check this box to allow the site URL that is being submitted to redirect surfers to a different URL
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="background-color: #ececec; font-weight: bold; font-size: 9pt;">
+Account Banner Settings
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Max Banner Width</b>
+</td>
+<td>
+The maximum banner width (in pixels) allowed in this category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Max Banner Height</b>
+</td>
+<td>
+The maximum banner height (in pixels) allowed in this category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right" nowrap="nowrap">
+<b>Max Banner Filesize</b>
+</td>
+<td>
+The maximum banner file size (in bytes) allowed in this category
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+
+</td>
+<td>
+<b>Force all banners to the height and width entered above</b><br />
+Check this box to force all banners to have the dimensions entered above.  Smaller banners will be stretched to this size.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+
+</td>
+<td>
+<b>Download banners to check height, width, and filesize</b><br />
+Check this box to have the banner dimensions and filesize checked during account submission.  This will download the banner
+from the remote site to check this information, but will not permanently store the banner on your server.
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+
+</td>
+<td>
+<b>Host member account banners from your server</b><br />
+Check this box to have all member banners served from your server.  This will download the banner from the remote site and store
+it permanently on your server so when people access your ranking list the banners will load from your server.
+</td>
+</tr>
+</table>
+</ul>
+
+Once you have filled in all of the fields as you want them, press the Add Category button.  This will add the new category to the database, and it will
+be activated and ready for accounts immediately.
+
+<br />
+<br />
+
+<a name="edit"></a>
+<b class="heading">Editing a Category</b>
+
+<br />
+<br />
+
+To edit a category you will first need to locate it through the <a href="#search">View/Search</a> interface.  When you locate the category you want to edit, click on the
+<img src="../images/edit.png"> icon to bring up the category editing interface.  This interface is nearly identical to the category addition interface,
+and has the same form fields with the same properties.  You can make the changes that you want, and then press the Update Category button to save your changes.
+
+<br />
+<br />
+
+<a name="delete"></a>
+<b class="heading">Deleting a Category</b>
+
+<br />
+<br />
+
+<div class="note">
+Deleting a category will also delete all of the accounts contained in that category!
+</div>
+
+<br />
+
+To delete a category you will first need to locate it through the <a href="#search">View/Search</a> interface.  When you locate the category you want to delete, click
+on the <img src="../images/trash.png"> icon, which will ask you to confirm the deletion.
+
+<br />
+<br />
+
+You can also delete several categories at once by putting a check in the box next to the categories you want to delete, then pressing the Delete button at the bottom of the page.
+
+
+</div>
+</div>
+
+<div style="height: 1200px">
+</div>
+
+</body>
+</html>

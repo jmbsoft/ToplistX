@@ -1,0 +1,123 @@
+
+                              JMB Software, Inc.
+
+                     TERMS AND CONDITIONS OF USE AGREEMENT
+
+READ THE FOLLOWING TERMS AND CONDITIONS CAREFULLY BEFORE INSTALLING THE
+SOFTWARE. DOWNLOADING, INSTALLING OR USING SOFTWARE INDICATES YOUR ACCEPTANCE
+OF THESE TERMS AND CONDITIONS.  IF YOU DO NOT AGREE WITH THESE TERMS AND
+CONDITIONS, DO NOT PROCEED TO THE NEXT SCREEN.
+
+
+1. License.  In this license agreement ("License Agreement"), you, the
+purchaser of the license rights granted by this Agreement, are referred to as
+"Licensee" or "You."  In accordance with the terms and conditions of this
+License Agreement, JMB Software, Inc. ("Licensor" or "us" or "we") grants
+Licensee the non-exclusive license to use the accompanying software
+("Software") and documentation ("Documentation").  In this License Agreement,
+the Software and Documentation and any copies or modifications are referred to
+as the "Licensed Product."  All rights to and in the Licensed Product, all
+copies and derivative works, including, but not limited to, copyrights and
+trade secret rights, belong to Licensor and Licensor holds title to each copy
+of the Software.  The Software shall only be used in conjunction with one web
+site.  Licensee is required to purchase additional licenses of the Licensed
+Product for each additional web site.  Use of the Software on more than one web
+site without proper licensing will result in termination of all of Licensee's
+rights to use the Licensed Product.  Licensee's login information for the
+Owners Lounge is for use of Licensee only.  Licensee shall not provide Owners
+Lounge login information to any third party under any circumstance, and this
+Agreement shall automatically terminate in the event of such action.  Licensee
+shall not transfer or distribute the Licensed Product to others, and this
+Agreement shall automatically terminate in the event of such a transfer or
+distribution.  Licensee shall not copy, modify or create derivative works the
+Licensed Product, except as provided for herein and to make one copy the
+Software for the sole purpose of backup as long as all copyright and other
+notices are reproduced and included on the backup copy.
+
+
+2. Term and Termination.  This License Agreement is effective until
+terminated.  Licensor may terminate this License Agreement if Licensee
+breaches any of the terms and conditions contained herein.  Upon termination of
+this License Agreement for any reason, Licensee shall permanently destroy all
+copies of the Licensed Product.  All provisions of this Agreement relating to
+disclaimers of warranties, limitation of liability, remedies, or damages, and
+Licensor's proprietary rights shall survive termination.
+
+
+3. Restrictions On Transfer and Use.  Licensee may not transfer, in
+whole or in part, the Licensed Product to any third party, including a transfer
+contemporaneously with the sale of the web site, assets or stock of Licensee.
+Any attempt to sublicense, assign, or transfer any of the rights, duties, or
+obligations hereunder is void.  Use of the Software for remote hosting of
+software for third parties is forbidden and may result in termination of your
+License Agreement.
+
+
+4. Limited Warranty.  Licensor does not warrant that the functions
+contained in the Licensed Product will meet Licensee's requirements or that the
+operation of the Software will be uninterrupted or error-free.
+
+THE LICENSED PRODUCT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. LICENSOR
+DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET YOUR
+REQUIREMENTS OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR
+ERROR FREE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE LICENSED
+PRODUCT IS WITH LICENSEE.
+
+Some states do not allow the exclusion of implied warranties, so the above
+exclusion may not apply to you.  This warranty gives you specific legal rights,
+and you may also have other rights that vary from state to state.
+
+
+5. Limitation Of Liability.  LICENSOR'S SOLE OBLIGATION OR LIABILITY
+UNDER THIS AGREEMENT IS THE REPLACEMENT OF DEFECTIVE MEDIA. IN NO EVENT WILL
+LICENSOR BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, PUNITIVE, DIRECT OR
+INDIRECT DAMAGES, INCLUDING, WITHOUT LIMITATION, ANY LOSS OF DATA, OR LOSS OF
+PROFITS OR LOST SAVINGS OR LOSS OF USE, ARISING OUT OF USE OF OR INABILITY TO
+USE THE SOFTWARE OR DOCUMENTATION OR FOR ANY INSTALLATION SERVICES, EVEN IF
+LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM
+BY ANY THIRD PARTY. IF LICENSOR IS FOUND LIABLE FOR DAMAGES BY A COURT OF LAW,
+THEN THE MAXIMUM, IN THE AGGREGATE, OF DAMAGES SHALL BE THE AMOUNT THE PAID BY
+THE LICENSEE TO LICENSOR HEREUNDER.
+
+
+6. General.  Any attempt to sublicense, assign or transfer any of the
+rights, duties or obligations hereunder is void.  This Agreement shall be
+governed by and interpreted under the substantive and procedural laws of the
+State of Iowa, without regard to conflicts of provisions. All disputes shall be
+resolved in the courts located in Linn County, Iowa.  Licensee's obligations
+hereunder shall at all times be subject to the export control laws and
+regulations mandated by the Federal Government.  You agree that you will comply
+with all export control laws and regulations.
+
+
+7. Technical Support.  Software is provided as-is and does not include
+any official tech support from Licensor.  A forum is available where questions
+can be posted for other owners to view and respond.
+
+
+8. Refund Policy.  We do not refund any monies for return of the
+Licensed Product.  ALL SALES ARE FINAL.  The operating system and other
+requirements are clearly stated, so make sure that your system meets those
+requirements before you purchase the Licensed Product.
+
+
+9. Confidentiality and Linking. Your personal information will be kept
+confidential and will not be disclosed to a third party unless we are presented
+with a court order ordering us to do so.  The Software may enable collection of
+personally identifiable information and you as the owner are solely responsible
+for compliance with the Children's Online Privacy Protection Act.
+
+We reserve the right to use your web site URL as an example for other potential
+customers to view.  We reserve the right to link to your site whenever you are
+using the Software.  The Software contains links to our web site at the bottom
+of some of the pages. This is done to provide us with an inexpensive way of
+advertising, and in turn allows us to offer you the most affordable prices
+possible.  Removal or alteration any of these links is strictly forbidden.  If
+your web site is found to have removed or altered the link, your Owner's Lounge
+access will be permanently disabled and this License Agreement terminated.  We
+offer a special version of the Software for an additional fee that does not
+contain links to our site.  Beta or other types of test releases may not have a
+link removed version available.
+

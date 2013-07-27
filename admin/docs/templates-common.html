@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>ToplistX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div align="center">
+<span class="large">Common Template Variables</span>
+</div>
+
+<br />
+
+<div class="centered">
+<div class="main-content">
+
+<div style="position: relative; float: right;"><a href="index.html">Table of Contents</a></div>
+
+<b class="heading">Introduction</b>
+
+<br />
+<br />
+
+Many of the script and e-mail templates share the same template values.  This document will describe the commonly used template values that are available.
+
+<br />
+<br />
+
+<b class="heading">Common Template Variables</b>
+
+<br />
+<br />
+
+
+<ul>
+<b>{$config}</b>
+
+<br />
+<br />
+
+ToplistX configuration settings
+
+<br />
+<br />
+
+{$config.install_url} - ToplistX installation URL<br />
+{$config.banner_url} - The Banner URL setting<br />
+{$config.from_email} - E-mail Address setting<br />
+{$config.from_email_name} - E-mail Name setting<br />
+{$config.date_format} - Date Format setting<br />
+{$config.time_format} - Time Format setting<br />
+{$config.timezone} - Timezone setting<br />
+{$config.dec_point} - Decimal Point setting<br />
+{$config.thousands_sep} - Thousands Separator setting
+
+<br />
+<br />
+<br />
+
+
+<b>{$account}</b>
+
+<br />
+<br />
+
+The data for a specific account
+
+<br />
+<br />
+
+{$account.username} - The account's username<br />
+{$account.site_url} - The site URL <br />
+{$account.title} - The site title <br />
+{$account.description} - The site description<br />
+{$account.keywords} - The keywords assigned to the account<br />
+{$account.email} - The e-mail address associated with the account<br />
+{$account.return_percent} - The account's assigned weight<br />
+{$account.date_added} - The date and time that the account was added to the database<br />
+{$account.date_activated} - The date and time that the account was activated<br />
+{$account.category} - The category name that this account is assigned to<br />
+{$account.icons} - An array of icons assigned to the account<br />
+{$account.banner_url} - The full URL to the preview thumbnail for this account, if it has one<br />
+{$account.banner_width} - The width of the preview thumbnail, if it has one<br />
+{$account.banner_height} - The width of the preview thumbnail, if it has one<br />
+{$account.last_rank} - The account's rank during the last build (must be using storeranks=true)<br />
+{$account.last_category_rank} - The account's category rank during the last build (must be using storecatranks=true)
+
+<br />
+<br />
+
+In addition to these default values, all of your user defined account fields will be available from this template value as well.  So, for example, if you create
+a user defined field with the name icq_number you can access this value using {$account.icq_number}
+
+<br />
+<br />
+<br />
+
+<b>{$pagination}</b>
+
+<br />
+<br />
+
+This template value contains details on the pagination available for the page being viewed.
+
+<br />
+<br />
+
+{$pagination.prev} - An indicator of whether there is a previous page of results<br />
+{$pagination.next} - An indicator of whether there is a next page of results<br />
+{$pagination.start} - The starting position of results displayed on this page<br />
+{$pagination.end} - The ending position of results displayed on this page<br />
+{$pagination.total} - The total number of results<br />
+
+</ul>
+
+</div>
+</div>
+
+<div style="height: 1200px">
+</div>
+
+</body>
+</html>

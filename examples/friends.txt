@@ -1,0 +1,176 @@
+Overview
+--------
+The template below will allow you to display your members in a friends
+style layout.  Most friends pages use 150 tall by 100 wide images for
+the member banners and require that the girl enter her name for the
+site title field.
+
+This example shows a 5x5 table of friends.  Of course, you can adjust 
+this by changing the ranks attribute of the {accounts} template function
+and the location attribute of the {insert} template function. The {insert}
+template function is what causes the list to continue on the next row.
+
+
+
+
+Template Code
+-------------
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <link rel="stylesheet" type="text/css" href="{$config.install_url}/templates/style.css" />
+  <title>Friends</title>
+  <style type="text/css">
+  table td {
+    font-size: 8pt;
+  }
+  </style>
+</head>
+<body>
+
+<div id="background">
+<div id="content">
+
+<table id="logo" width="100%">
+<tr>
+<td>
+<img src="{$config.install_url}/images/logo-friends.png" border="0" width="174" height="70" alt="Friends" />
+</td>
+<td valign="bottom">
+<form action="{$config.install_url}/search.php" method="post">
+<input type="text" name="s" value="" /> 
+{categories var=$categories}
+{if count($categories)}
+<select name="c">
+  <option value="0">All Categories</option>
+{foreach var=$category from=$categories}
+  <option value="{$category.category_id|htmlspecialchars}">{$category.name|htmlspecialchars}</option>
+{/foreach}
+</select>
+{/if}
+<input type="image" src="{$config.install_url}/images/search-button.png" style="position: relative; top: 6px; margin: 0; padding: 0;" />
+</form>
+</td>
+<td valign="bottom" align="center" width="120">
+<a href="{$config.install_url}/accounts.php"><img src="{$config.install_url}/images/add-button.png" border="0" alt="Add Your Site" style="display: block; margin-bottom: 8px;" /></a>
+<a href="{$config.install_url}/accounts.php?r=login"><img src="{$config.install_url}/images/login-button.png" border="0" alt="Login" /></a>
+</td>
+</tr>
+</table>
+
+<br />
+
+<div class="table-border">
+<table cellspacing="1" cellpadding="0" width="100%">
+<tr>
+
+{accounts
+var=$accounts
+ranks=1-15
+storeranks=true
+category=MIXED
+minhits=0
+order=unique_in_last_hour DESC}
+
+{foreach var=$account from=$accounts counter=$counter}
+<td class="row-color-a" style="text-align: center">
+<div style="padding: 6px;">
+<a href="{$config.install_url}/out.php?id={$account.username|urlencode}" target="_blank">
+<img src="{if $account.banner_url}{$account.banner_url|htmlspecialchars}{else}{$config.install_url}/images/friends-missing-banner.png{/if}" border="0" alt="{$account.title|htmlspecialchars}" /></a>
+<br /><b><a href="{$config.install_url}/out.php?id={$account.username|urlencode}" target="_blank">{$account.title|htmlspecialchars}</a></b><br />
+{$account.sorter|tnumber_format}
+</div>
+</td>
+{insert counter=$counter location=+5 max=10}
+</tr><tr>
+{/insert}
+{/foreach}
+
+{if $fillranks}
+{range start=$fillranks.start end=$fillranks.end counter=$rank}
+<td class="row-color-a" style="text-align: center">
+<div style="padding: 6px;">
+<a href="{$config.install_url}/accounts.php"><img src="{$config.install_url}/images/friends-site-here.png" border="0" alt="Your Site Here" /></a>
+<br /><b><a href="{$config.install_url}/accounts.php">Add Your Site</a></b><br />
+</div>
+</td>
+{insert counter=$rank location=+5 max=$fillranks.end-1}
+</tr><tr>
+{/insert}
+{/range}
+{/if}
+
+</tr>
+</table>
+</div>
+
+<div style="margin-top: 15px; margin-bottom: 15px; text-align: center; font: bold  1.25em verdana">
+ADVERTISEMENT HERE!!
+</div>
+
+<div class="table-border">
+<table cellspacing="1" cellpadding="0" width="100%">
+<tr>
+
+{accounts
+var=$accounts
+ranks=16-30
+storeranks=true
+category=MIXED
+minhits=0
+order=unique_in_last_hour DESC}
+
+{foreach var=$account from=$accounts counter=$counter}
+<td class="row-color-a" style="text-align: center">
+<div style="padding: 6px;">
+<a href="{$config.install_url}/out.php?id={$account.username|urlencode}" target="_blank">
+<img src="{if $account.banner_url}{$account.banner_url|htmlspecialchars}{else}{$config.install_url}/images/friends-missing-banner.png{/if}" border="0" alt="{$account.title|htmlspecialchars}" /></a>
+<br /><b><a href="{$config.install_url}/out.php?id={$account.username|urlencode}" target="_blank">{$account.title|htmlspecialchars}</a></b><br />
+{$account.sorter|tnumber_format}
+</div>
+</td>
+{insert counter=$counter location=+5 max=10}
+</tr><tr>
+{/insert}
+{/foreach}
+
+{if $fillranks}
+{range start=$fillranks.start end=$fillranks.end counter=$rank}
+<td class="row-color-a" style="text-align: center">
+<div style="padding: 6px;">
+<a href="{$config.install_url}/accounts.php"><img src="{$config.install_url}/images/friends-site-here.png" border="0" alt="Your Site Here" /></a>
+<br /><b><a href="{$config.install_url}/accounts.php">Add Your Site</a></b><br />
+</div>
+</td>
+{insert counter=$rank location=+5 max=$fillranks.end-1}
+</tr><tr>
+{/insert}
+{/range}
+{/if}
+
+</tr>
+</table>
+</div>
+
+
+<div style="text-align: center; margin-top: 20px">
+{$total_accounts|tnumber_format} Site{if $total_accounts != 1}s{/if} In Our Database<br />
+Last Update: {date value=now format='m-d-Y h:ia'}
+
+<br />
+<br />
+
+<a href="{$config.install_url}/accounts.php">Create Account</a> | <a href="{$config.install_url}/accounts.php?r=login">Maintain Account</a>
+
+<br />
+<br />
+
+%%Powered_By%%
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

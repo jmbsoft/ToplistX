@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>ToplistX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div align="center">
+<span class="large">End User Account Search</span>
+</div>
+
+<br />
+
+<div class="centered">
+<div class="main-content">
+
+<div style="position: relative; float: right;"><a href="index.html">Table of Contents</a></div>
+
+<b class="heading">Introduction</b>
+
+<br />
+<br />
+
+ToplistX includes a script that your website visitors can use to search your account database.  This will allow them to quickly find the content they are looking for on your site.
+The search function is not enabled on the software's default template set, so this document will assist you in setting it up.
+
+<br />
+<br />
+
+<b class="heading">Adding a Search Box</b>
+
+<br />
+<br />
+
+Adding a search box on your ranking pages is pretty straightforward.  Here is some example code:
+
+<xmp><form action="{$config.install_url}/search.php" method="post">
+<input type="text" name="s" value="" />
+{categories var=$categories}
+{if count($categories)}
+<select name="c">
+  <option value="0">All Categories</option>
+{foreach var=$category from=$categories}
+  <option value="{$category.category_id|htmlspecialchars}">{$category.name|htmlspecialchars}</option>
+{/foreach}
+</select>
+{/if}
+<input type="submit" value="Search" />
+</form></xmp>
+
+You can use this code pretty much anywhere on your ranking page templates.
+
+<br />
+<br />
+
+<b class="heading">Searched Fields</b>
+
+<br />
+<br />
+
+The end-user account search function will search the title, description and keywords fields for all of the accounts that currently are currently active and not suspended.
+This will ensure that your pending or suspended accounts will not show up as search results.
+
+<br />
+<br />
+
+<b class="heading">Boolean Mode Search</b>
+
+<br />
+<br />
+
+The end-user account search function uses boolean mode searches, just like you can use for some fields in the ToplistX control panel.  The <a href="boolean-searches.html">Boolean Searches</a>
+section of the software manual describes the available options and restrictions for using boolean mode searches.  You may want to provide your users with
+details on the different search formats they can use.  Feel free to copy the information from the <a href="boolean-searches.html">Boolean Searches</a> section of the software manual to use
+for your end-user documentation.
+
+<br />
+<br />
+
+<b class="heading">Search Caching</b>
+
+<br />
+<br />
+
+To help reduce the load caused by offering a search feature, the software uses a caching system.  Search results will be cached for 1 hour, so if another user comes along within 1 hour and
+enters the same search term as a previous user, the cached results will be displayed.  This will reduce the number of database queries required, but you do need to be aware of
+the caching system when you are testing the search feature.  If you do a search and a new account is added within 1 hour, don't expect that new account to immediately
+appear in the search results if you search for the exact same term.
+
+</div>
+</div>
+
+<div style="height: 1200px">
+</div>
+
+</body>
+</html>
